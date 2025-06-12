@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+
 
 /* Configuração da fonte (opcional, mas recomendado para o visual) */
 :root {
@@ -26,6 +26,7 @@ body {
     border-radius: 20px; /* Bordas bem arredondadas */
     max-width: 90%;
     width: 450px;
+    align-items: center;
 }
 
 /* Texto pequeno "Oi, princesa." */
@@ -68,6 +69,22 @@ body {
     box-shadow: 0 4px 15px -5px #f93b7a; /* Sombra sutil na cor do botão */
     transition: all 0.2s ease-in-out; /* Animação suave */
 }
+
+.btn  {
+    display: inline-block;
+    animation: wave 5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
 
 /* Efeito ao passar o mouse por cima do botão */
 .btn:hover {
@@ -134,26 +151,58 @@ body {
 
 /* ---- Placeholder da Imagem ---- */
 .imageback {
-    background-color: var(--vibrant-pink);
+    background-color: #FF2F6F;
     width: 100%;
-    aspect-ratio: 4 / 3; /* Proporção da imagem (4 de largura para 3 de altura) */
+    aspect-ratio: 4 / 5; /* Proporção da imagem (4 de largura para 3 de altura) */
     border-radius: 20px;
     margin-bottom: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-
-
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden; 
-    
+    position: relative;
 }
 
- .imageback img {
-    width: 100%;
-    height: 100%;
+.image-top {
+    width: 85%;
+    height: 90%;
     object-fit: cover;
-} */
+    border-radius: 5%;
+    position: absolute;
+    top: 5%;
+    left: 7.5%;
+    opacity: 1;
+    animation: crossfadeLoop 6s infinite ease-in-out;
+}
+
+@keyframes crossfadeLoop {
+  0% {
+    opacity: 1; /* Começa visível */
+  }
+  45% {
+    opacity: 1; /* Fica visível por um tempo */
+  }
+  55% {
+    opacity: 0; /* Começa a transição para invisível */
+  }
+  90% {
+    opacity: 0; /* Fica invisível, mostrando a imagem de baixo */
+  }
+  100% {
+    opacity: 1; /* Volta a ser visível para recomeçar o loop */
+  }
+}
+
+ .image-bottom {
+    width: 85%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5%;
+    position: absolute;
+    top: 5%;
+    left: 7.5%;
+} 
 
 
 /* ---- Conteúdo de Texto ---- */
@@ -162,25 +211,27 @@ body {
 }
 
 .main-title {
-    font-size: 2.5rem; /* 40px */
-    font-weight: 700; /* Negrito */
-    margin: 0;
+    font-size: 150%;
+    font-weight: 700; 
+    margin-top: -10%;
+    margin-bottom: 10%;
+    position: relative;
 }
 
 .sub-title {
-    font-size: 1.125rem; /* 18px */
+    font-size: 110%; /* 18px */
     font-weight: 500; /* Semi-negrito */
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: -10%;
+    margin-bottom: 3%;
+    position: relative;
 }
 
 .message {
-    font-size: 1rem; /* 16px */
-    font-weight: 400; /* Regular */
+    font-size: 75%;
+    font-weight: 10%; /* Regular */
     line-height: 1.7; /* Espaçamento entre as linhas para melhor leitura */
     color: var(--light-text);
     margin: 0;
 }
 
 
-}

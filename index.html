@@ -16,8 +16,8 @@
         <h1 class="question">Aceita viver o resto da vida comigo?</h1>
         
         <div class="button-container">
-            <button class="btn">Sim</button>
-            <button class="btn">Sim</button>
+            <button class="btn" id="btn">Sim</button>
+            <button class="btn" id="btn2">Sim</button>
         </div>
     </div>
 
@@ -34,5 +34,26 @@
             Created for Princesa Isabelle, by Rhyan
         </p>
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openPageButton = document.getElementById('btn');
+            openPageButton.addEventListener('click', () => {
+                window.location.href = 'second_index.html';
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openPageButton = document.getElementById('btn2');
+            openPageButton.addEventListener('click', () => {
+                window.location.href = 'second_index.html';
+            });
+        });
+    </script>
+
+
 </body>
 </html>

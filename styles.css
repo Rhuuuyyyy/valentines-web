@@ -124,4 +124,63 @@ body {
 
 
 
+
+.second-card {
+    max-width: 500px;
+    width: 90%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ---- Placeholder da Imagem ---- */
+.imageback {
+    background-color: var(--vibrant-pink);
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Proporção da imagem (4 de largura para 3 de altura) */
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    
+}
+
+ .imageback img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+/* ---- Conteúdo de Texto ---- */
+.text-content {
+    padding: 0 10px; /* Adiciona um pequeno respiro nas laterais do texto */
+}
+
+.main-title {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700; /* Negrito */
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500; /* Semi-negrito */
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.message {
+    font-size: 1rem; /* 16px */
+    font-weight: 400; /* Regular */
+    line-height: 1.7; /* Espaçamento entre as linhas para melhor leitura */
+    color: var(--light-text);
+    margin: 0;
+}
+
+
 }

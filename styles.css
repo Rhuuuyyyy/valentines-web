@@ -11,9 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-height: 100%;
     margin: 0;
     background-color: #FFCCDE; /* Cor de fundo escura, como na imagem */
     font-family: var(--font-family);
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* O cartão rosa no centro */

@@ -1,0 +1,124 @@
+@media (max-width: 800px) {
+
+/* Configuração da fonte (opcional, mas recomendado para o visual) */
+:root {
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Centraliza o conteúdo na tela inteira */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #FFCCDE; /* Cor de fundo escura, como na imagem */
+    font-family: var(--font-family);
+}
+
+/* O cartão rosa no centro */
+.card {
+    background-color: #FFCCDE; /* Tom de rosa claro tirado da imagem */
+    padding: 40px 50px;
+    border-radius: 20px; /* Bordas bem arredondadas */
+    max-width: 90%;
+    width: 450px;
+}
+
+/* Texto pequeno "Oi, princesa." */
+.hello {
+    font-size: 100%;
+    color: #4B4B4B;
+    margin: 0;
+    margin-bottom: 3%; /* Pequeno espaço abaixo */
+    left: 100%;
+}
+
+/* Texto grande "Aceita viver..." */
+.question {
+    font-size: 100%; /* Tamanho maior */
+    font-weight: 500; /* Negrito */
+    color: #2d2d2d;
+    margin-top: -4.5%;
+    margin-bottom: -8%;
+}
+
+/* Container que segura os dois botões */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 35px; /* Espaço acima dos botões */
+}
+
+/* Estilo dos botões "Sim" */
+.btn {
+    background-color: #FF2F6F; /* Cor rosa vibrante do botão */
+    color: white;
+    font-family: var(--font-family);
+    font-size: 100%;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px; /* Bordas arredondadas do botão */
+    padding: 5% 15%; /* Preenchimento interno (altura e largura) */
+    cursor: pointer;
+    box-shadow: 0 4px 15px -5px #f93b7a; /* Sombra sutil na cor do botão */
+    transition: all 0.2s ease-in-out; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.btn:hover {
+    transform: translateY(-3px); /* Levanta o botão um pouco */
+    box-shadow: 0 8px 20px -5px #f93b7a; /* Aumenta a sombra */
+}
+
+.image-carta {
+    
+    position: absolute; 
+
+    bottom: 9%; /* Distância de 10% da altura da tela, a partir da borda de BAIXO */
+    right: 0%;  /* Distância de 10% da largura da tela, a partir da borda da DIREITA */
+
+    width: 25vh;  
+    height: 25vh;
+
+}
+
+.image-carta img {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+}
+
+.image-coracao {
+    
+    position: absolute; 
+
+    top: 5%; /* Distância de 10% da altura da tela, a partir da borda de BAIXO */
+    left: 0%;  /* Distância de 10% da largura da tela, a partir da borda da DIREITA */
+
+    width: 25vh;  
+    height: 25vh;
+
+}
+
+.image-coracao img {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+}
+
+.about {
+    position: absolute;
+    font-size: 100%;
+    color: #4B4B4B;
+    margin: 0;
+    margin-bottom: 3%; /* Pequeno espaço abaixo */
+    bottom: 1%;
+}
+
+
+
+}

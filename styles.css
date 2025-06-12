@@ -16,7 +16,6 @@ body {
     background-color: #FFCCDE; /* Cor de fundo escura, como na imagem */
     font-family: var(--font-family);
     overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 /* O cartão rosa no centro */
